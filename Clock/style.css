@@ -1,0 +1,206 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main, .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.ClockBody {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  border-radius: 50%;
+  background-image: url(asset/carbonBg\ \(2\).webp);
+  background-size: 150%;
+}
+.ClockBody::before {
+  content: "";
+  width: 104%;
+  height: 104%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(39deg, rgb(0, 0, 0) 0%, rgb(19, 19, 19) 27%, rgb(58, 58, 58) 42%, rgb(198, 198, 198) 48%, rgb(69, 69, 69) 54%, rgb(21, 21, 21) 73%, rgb(0, 0, 0) 100%);
+}
+.ClockBody #numbers {
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  position: relative;
+}
+.ClockBody #numbers .numbers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 35px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+.ClockBody #numbers .numbers:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(30deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(60deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(90deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(120deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(150deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(180deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(210deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(240deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(9) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(270deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(10) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(300deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(11) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(330deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #numbers .numbers:nth-child(12) {
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(360deg) translateX(200px) rotate(90deg);
+}
+.ClockBody #pointers {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ClockBody #pointers #Hour {
+  width: 8px;
+  height: 100px;
+  background: rgb(177, 177, 177);
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 4px);
+  transform-origin: bottom;
+  z-index: 8;
+}
+.ClockBody #pointers #Hour::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  background: inherit;
+  position: absolute;
+  top: 100%;
+}
+.ClockBody #pointers #Hour::before {
+  content: "";
+  height: 5px;
+  border: solid transparent 4px;
+  border-bottom: rgb(177, 177, 177) solid 15px;
+  position: absolute;
+  bottom: 100%;
+}
+.ClockBody #pointers #Minute {
+  width: 6px;
+  height: 170px;
+  background: rgb(223, 223, 223);
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 3px);
+  transform-origin: bottom;
+  z-index: 9;
+}
+.ClockBody #pointers #Minute::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  background: inherit;
+  position: absolute;
+  top: 100%;
+}
+.ClockBody #pointers #Minute::before {
+  content: "";
+  height: 5px;
+  border: solid transparent 3px;
+  border-bottom: rgb(223, 223, 223) solid 10px;
+  position: absolute;
+  bottom: 100%;
+}
+.ClockBody #pointers #Second {
+  width: 4px;
+  height: 175px;
+  background: red;
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - 2px);
+  transform-origin: bottom;
+  z-index: 10;
+}
+.ClockBody #pointers #Second::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  background: inherit;
+  position: absolute;
+  top: 100%;
+}
+.ClockBody #pointers #Second::before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: 100%;
+  border: solid transparent 2px;
+  border-bottom: red solid 10px;
+}
+.ClockBody #pointers #Second .pin {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 100;
+}
+.ClockBody #pointers #date {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  background: rgb(224, 224, 224);
+  transform: translateY(-50%);
+  border: solid 3px gray;
+  z-index: inherit;
+  text-align: center;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.664);
+}/*# sourceMappingURL=style.css.map */
