@@ -10,4 +10,35 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+main .searchBox {
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: solid 5px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 5px;
+}
+main .searchBox #search {
+  width: 100%;
+  height: 35px;
+  padding: 0px 5px;
+}
+main .searchBox ul {
+  width: 100%;
+  padding: 0;
+}
+main .searchBox ul li {
+  border-bottom: solid 1px rgb(0, 0, 0);
+  margin-top: 10px;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
