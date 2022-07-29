@@ -24,12 +24,13 @@ main,.container{
 
 .ClockBody{
     // border: solid red 2px;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     position: relative;
     border-radius: 50%;
     background-image: url(asset/carbonBg\ \(2\).webp);
     background-size: 150%;
+    // transform: scale(1);
     &::before{
         content: '';
         width: 104%;
@@ -52,14 +53,14 @@ main,.container{
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 7px;
-            height: 35px;
+            width: 5px;
+            height: 30px;
             background: rgb(255, 255, 255);
             text-align: center;
             // border: solid red 1px ;
             @for $i from 1 through 12{
                 &:nth-child(#{$i}){
-                    transform: translate(-50%,-50%) rotate(-90deg) rotate(#{360/12 * $i}deg) translateX(200px)  rotate(90deg);
+                    transform: translate(-50%,-50%) rotate(-90deg) rotate(#{360/12 * $i}deg) translateX(180px)  rotate(90deg);
                     
                 }
             }
@@ -176,5 +177,17 @@ main,.container{
             text-align: center;
             box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.664);
         }
+    }
+}
+
+.logo{
+    color: rgb(158, 158, 158);
+    position: absolute;
+    font-size: 50px;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    a:hover{
+        color: white;
     }
 }

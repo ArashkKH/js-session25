@@ -23,8 +23,8 @@ main, .container {
 }
 
 .ClockBody {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   position: relative;
   border-radius: 50%;
   background-image: url(asset/carbonBg\ \(2\).webp);
@@ -53,46 +53,46 @@ main, .container {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 7px;
-  height: 35px;
+  width: 5px;
+  height: 30px;
   background: rgb(255, 255, 255);
   text-align: center;
 }
 .ClockBody #numbers .numbers:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(30deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(30deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(60deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(60deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(90deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(90deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(120deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(120deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(150deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(150deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(180deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(180deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(210deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(210deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(240deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(240deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(9) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(270deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(270deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(10) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(300deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(300deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(11) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(330deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(330deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #numbers .numbers:nth-child(12) {
-  transform: translate(-50%, -50%) rotate(-90deg) rotate(360deg) translateX(200px) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-90deg) rotate(360deg) translateX(180px) rotate(90deg);
 }
 .ClockBody #pointers {
   width: 100%;
@@ -203,4 +203,16 @@ main, .container {
   z-index: inherit;
   text-align: center;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.664);
+}
+
+.logo {
+  color: rgb(158, 158, 158);
+  position: absolute;
+  font-size: 50px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo a:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

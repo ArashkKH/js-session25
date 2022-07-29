@@ -1,4 +1,4 @@
-let sentences$ = ['Hi, Im Arash Kheirollahi','Im a web developer','this is a random text','this one is not random at all!','ok i lied, it was random :(','how you doin btw?','im doing pretty good today :)','had a real good time :D']
+let sentences$ = ['Hi, Im Arash Kheirollahi','Im a web developer','well','actually im a frontend student! :)','today i practiced more js','thought you would like to see my work :D','Enjoy :)','       ']
 let i = 1
 let counter = 0
 let func1 = setInterval(typer,50)
@@ -14,7 +14,7 @@ function typer(){
         }else{
             clearInterval(func1)
             setTimeout(() => {
-                func2 = setInterval(backspacer,50)
+                func2 = setInterval(backspacer,20)
             }, 2000);
         }
     }else{
